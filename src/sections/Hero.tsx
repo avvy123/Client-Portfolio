@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
 import Button from '../components/Button';
-import Avinash_Profile from "../assets/Avinash_Profile.jpg"
+import Nikhil_Profile from "../assets/Nikhil_Profile.png"
 
 export default function Hero() {
   const scrollToProjects = () => {
@@ -30,9 +30,9 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="mb-8 relative"
         >
-          <div className="w-36 h-48 md:w-40 md:h-52 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
+          <div className="w-36 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
             <img 
-              src={Avinash_Profile}
+              src={Nikhil_Profile}
               alt="Profile" 
               className="w-full h-full object-cover"
             />
@@ -52,7 +52,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-4xl md:text-6xl font-extrabold text-gray-900 dark:text-white tracking-tight mb-6"
         >
-          Hi, I'm <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">Avinash Kumar</span>
+          Hi, I'm <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">Nikhil Kumar</span>
         </motion.h1>
 
         <motion.p
@@ -61,8 +61,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mb-10 leading-relaxed"
         >
-          Frontend Developer & Full-Stack Developer with 3 years of experience specializing in React, TypeScript, and .NET. I build scalable, high-performance web applications.
-        </motion.p>
+Professional Video Editor & Content Creator with 6+ years of experience specializing in Adobe Premiere Pro and After Effects. I create high-quality tutorials, cinematic edits, and help aspiring creators turn video editing into a high-income skill.        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

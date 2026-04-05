@@ -1,7 +1,7 @@
 import { Suspense, lazy } from 'react';
 import Navbar from './sections/Navbar';
 import Hero from './sections/Hero';
-// import Footer from './sections/Footer';
+import Footer from './sections/Footer';
 import LoadingSkeleton from './components/LoadingSkeleton';
 
 // Lazy load sections for better initial load performance
@@ -29,7 +29,7 @@ function App() {
           <Contact />
         </Suspense>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

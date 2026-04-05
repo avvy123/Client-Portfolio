@@ -1,4 +1,3 @@
-import DashboardPreview from "../assets/dashborad-preview.png"
 export const NAV_LINKS = [
   { id: 'home', label: 'Home' },
   { id: 'about', label: 'About' },
@@ -8,9 +7,18 @@ export const NAV_LINKS = [
 ];
 
 export const SKILLS = [
-  { category: 'Frontend', items: ['React.js', 'Vite', 'TypeScript', 'Tailwind CSS', 'Redux'] },
-  { category: 'Backend', items: ['.NET Core', 'C#', 'Entity Framework'] },
-  { category: 'Database & Tools', items: ['SQL Server', 'Git', 'Postman', 'REST APIs'] },
+  {
+    category: 'Video Editing Tools',
+    items: ['Adobe Premiere Pro', 'After Effects', 'Adobe Photoshop']
+  },
+  {
+    category: 'Editing Skills',
+    items: ['Talking Head Videos', 'Cinematic Editing', 'Color Grading', 'Transitions & Effects', 'Sound Design' ]
+  },
+  {
+    category: 'Content Creation',
+    items: ['YouTube Content', 'Instagram Reels', 'Audience Engagement']
+  },
 ];
 
 export const PROJECTS = [
@@ -35,9 +43,14 @@ export const PROJECTS = [
     id: 3,
     title: 'Desk Support Ticket System',
     description: 'Frontend ticket management system built using React and Next.js, featuring dynamic CRUD operations with MockAPI, client-side authentication using localStorage, and a responsive dashboard for managing support requests efficiently.', 
-    image: DashboardPreview,
     tech: ['Next js', 'React', 'Javascript', 'REST Api', 'localStorage'],
     github: 'https://github.com/avvy123/desk-support-ticket-tool',
     demo: 'https://desk-support-ticket-tool.vercel.app/',
   }
 ];
+
+export const socialLinks = {
+  linkedin: "https://www.linkedin.com/in/technoxnikhil",
+  instagram: "https://www.instagram.com/technoxnikhil",
+  youtube: "https://www.youtube.com/@TechnoNikhilChannel"
+};

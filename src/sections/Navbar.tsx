@@ -42,7 +42,7 @@ export default function Navbar() {
           }}
           className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400"
         >
-          Avinash Portfolio
+          Techno Nikhil
         </a>
 
         {/* Desktop Menu */}

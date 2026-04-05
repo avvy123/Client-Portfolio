@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
-import { Github } from './GithubIcon';
 
 interface ProjectProps {
   title: string;
@@ -36,9 +35,7 @@ export default function ProjectCard({ title, description, image, tech, github, d
           <a href={demo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors">
             <ExternalLink size={18} /> Live Demo
           </a>
-          <a href={github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors ml-auto">
-            <Github size={18} /> Source Code
-          </a>
+          
         </div>
       </div>
     </motion.div>

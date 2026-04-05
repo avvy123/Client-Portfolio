@@ -20,7 +20,7 @@ export default function Skills() {
     <SectionWrapper 
       id="skills" 
       title="My Skills" 
-      subtitle="Technologies and tools I work with on a daily basis to build scalable applications."
+      subtitle="Creative tools and techniques I use daily to create high-quality videos and engaging content."
       className="bg-gray-50/50 dark:bg-gray-900/20"
     >
       <div className="grid md:grid-cols-3 gap-8">
