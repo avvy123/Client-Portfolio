@@ -5,12 +5,10 @@ interface ProjectProps {
   title: string;
   description: string;
   image: string;
-  tech: string[];
-  github: string;
   demo: string;
 }
 
-export default function ProjectCard({ title, description, image, tech, github, demo }: ProjectProps) {
+export default function ProjectCard({ title, description, image, demo }: ProjectProps) {
   return (
     <motion.div
       whileHover={{ y: -8 }}
@@ -24,18 +22,10 @@ export default function ProjectCard({ title, description, image, tech, github, d
       <div className="p-6 md:p-8 flex flex-col flex-grow">
         <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{title}</h3>
         <p className="text-gray-600 dark:text-gray-300 mb-6 flex-grow">{description}</p>
-        <div className="flex flex-wrap gap-2 mb-8">
-          {tech.map((t) => (
-            <span key={t} className="px-3 py-1 text-xs font-semibold bg-gray-100 text-gray-700 dark:bg-gray-900/50 dark:text-gray-300 rounded-full">
-              {t}
-            </span>
-          ))}
-        </div>
         <div className="flex gap-4 mt-auto pt-4 border-t border-gray-100 dark:border-gray-700/50">
           <a href={demo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors">
             <ExternalLink size={18} /> Live Demo
           </a>
-          
         </div>
       </div>
     </motion.div>

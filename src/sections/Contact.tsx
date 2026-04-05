@@ -27,8 +27,8 @@ export default function Contact() {
 
     try {
       await emailjs.send(
-        "service_phjn4jh", // from step 1
-        "template_zbgl3jv", // from step 1
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: data.name,
           from_email: data.email,
@@ -37,7 +37,7 @@ export default function Contact() {
           time: new Date().toLocaleString(),
           reply_to: data.email,
         },
-        "_GvPrjgP0c54Haw22", // from step 2
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       setIsSuccess(true);
