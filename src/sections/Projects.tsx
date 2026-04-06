@@ -1,6 +1,7 @@
 import SectionWrapper from "../components/SectionWrapper";
 import ProjectCard from "../components/ProjectCard";
 import { PROJECTS } from "../constants";
+import { MoveRightIcon } from "lucide-react";
 
 export default function Projects() {
   return (
@@ -19,6 +20,12 @@ export default function Projects() {
             <ProjectCard {...project} />
           </div>
         ))}
+      </div>
+      <div className="flex items-center justify-center gap-2 pt-2">
+        <p className="text-lg text-gray-500 md:hidden">
+          Swipe to explore
+        </p>
+        <MoveRightIcon />
       </div>
     </SectionWrapper>
   );
